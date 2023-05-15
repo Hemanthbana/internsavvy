@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile | Hemanth Bana</title>
+    <link href="./style.css" rel="stylesheet"/>
+    <link href="https://preview.redd.it/c53salxoeely.jpg?auto=webp&s=c56d371b74206c62f6cbfe151919e69db6010b26" rel="icon"/>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/bac2c28d59.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+</head>
+<body class="body">
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a id="brnd" class="navbar-brand" title="Surname" href="#">Bana</a>
+          <button class="btn btn-sm btn-light " title="darkmode" onclick="mode()">&#x263e</div></button>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pojects">Portfollio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skill">Others</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Contact
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">E-Mail</a></li>
+                        <li><a class="dropdown-item" href="#">Telegram</a></li>
+                        <li><a class="dropdown-item" href="#">Instagram</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="invisible">
+        <form  action="/submit" method="post">
+            <div class="mb-3">
+                <label for="validationDefault01" class="form-label">Email address</label>
+                <input type="email" name="countMail" class="form-control"   id="validationDefault01" placeholder="yourmail@example.com" value="" required>
+                <button class="btn btn-success"  type="submit"  target="_blank"  style="float:right">Sumbit</button>
+            </div>
+        </form>
+        <button onclick="closecount()">X</button>
+    </div>
+
+    <div id="contain" class="container-fluid">
+        <div>
+            <div class="intro">
+                <div class="intro1">
+                    <h2 style="margin-left: 25%;">Hello !</h2>
+                    <h1 style="margin-left: 25%;">I'm Hemanth</h1>
+                    <h5 style="margin-left: -13%;">Full-Stack Web Developer</h5>
+                    <button class="butn1" type="button"  onclick="success()" class="btn btn btn-sm"> <a href="#" >Count Me</a></button>
+                </div>
+                <div>
+                   <a href="#" target="_blank"><img style="border-radius: 50%;" src="/hemanth.png" alt="hemanth image"/></a> 
+                </div>
+            </div>
+            
+            <h5>---------- Projects ----------</h5>
+            <button id="arrow" onclick="arrow()"><a href="#projects">></a></button>
+        </div>
+        
+        <div id="Projects"> 
+            <div class="card" id="projct">
+               <a href="#" ><img   src="https://images.unsplash.com/photo-1601919051950-bb9f3ffb3fee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80" class="card-img" alt="Airbnb" title ="Airbnb Clone"></a> 
+            </div>
+            <div class="card" id="projct">
+               <a href="#"><img style="width:100%" src="https://images.pexels.com/photos/1787235/pexels-photo-1787235.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="Photosrama" title="Photo'S'rama"></a>
+            </div>
+            <div class="card" id="projct">
+               <a href="#"><img  src="https://images.pexels.com/photos/1051071/pexels-photo-1051071.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="SKNTDS"  title="SKNTDS"></a> 
+            </div>
+            <div class="card" id="projct">
+               <a href="#"><img src="https://images.pexels.com/photos/8908129/pexels-photo-8908129.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="other" title="others"></a> 
+            </div>         
+            
+        </div>
+
+        <h5>---------- Skills ----------</h5>
+        <button id="arrow" onclick="arrow()"><a href="#skill">></a></button>
+
+        <div id="skill"> 
+         
+            <div class="card" id="skil">
+                <img   src="https://cdn.pixabay.com/photo/2015/11/27/10/55/photoshop-1065296_1280.jpg" class="card-img" alt="photoshop" title="photoshop">
+            </div>
+            <div class="card" id="skil">
+                <img  src="https://w7.pngwing.com/pngs/622/18/png-transparent-adobe-logo-logos-premier-pro-logos-and-brands-line-filled-icon.png" class="card-img-top" alt="premier pro" title="premier pro">
+            </div>
+            <div class="card" id="skil">
+                <img  src="https://cdn-images-1.medium.com/max/1200/1*A6kkoOVJVpXPWewg8axc5w.png" class="card-img-top" alt="Canva" title="Canva">
+            </div>
+            <div class="card" id="skil">
+                <img src="src/blender.png" class="card-img-top" alt="Blender 3D" title="Blender 3D">
+            </div>        
+        </div>
+
+        <h5>---------- Others ----------</h5>
+        <button id="arrow" onclick="arrow()"><a href="#other">></a></button>
+
+        <div id="other">
+            <div>
+                <iframe width="100%" height="500" src="https://www.instagram.com/render_hemanth/embed" tittle="Instagram" frameborder="0"></iframe>
+            </div>
+            <div>
+                <iframe width="100%" height="500" src="https://www.youtube.com/embed/nn_o58v2ttc" title="YTB Middle bench animuthyam" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+
+        </div>
+        <h5>---------- Contact ----------</h5>
+        <button id="arrow" onclick="arrow()"><a href="#contact">></a></button>
+
+        <div id="contact" >
+            <div class="podium">
+                <div class="p1" >
+                    <img src="src/174854.png" alt="HTML">
+                    <img src="src/JavaScript-logo.png" alt="JavaScript">
+                    <img src="src/react.png" alt="react">
+                </div>
+                <div class="p2">
+                    <img src="src/png-transparent-js-logo-node-logos-and-brands-icon.png" alt="nodeJS">
+                    <img src="src/png-transparent-mongodb-original-wordmark-logo-icon-thumbnail.png" alt="MongoDB">
+                </div>
+            </div>  
+            <div style="width:50%;" >
+                <form class="mb-3" action="/feedback" method="post">
+                    <div class="mb-3">
+                        <label for="validationDefault01" class="form-label">Your Full Name</label>
+                        <input type="text" name="fName" class="form-control" id="validationDefault01" value="" placeholder="Surname MiddleName LastName" required >
+                    </div>
+                    <div class="mb-3">
+                        <label for="validationDefault01" class="form-label">Email address</label>
+                        <input type="text" name="Email" class="form-control" id="validationDefault01" value="" placeholder="yourmail@example.com" required >
+                    </div>
+                    <div class="mb-3">           
+                        <label for="validationDefault01" class="form-label">Your Message </label>
+                        <textarea type="text" name="message" class="form-control" value="" placeholder="Enter your message" id="validationDefault01" rows="3" required ></textarea>
+                    </div>
+                    <button class="btn btn-success"  type="submit" style="float:right">Sumbit</button>
+                </form>
+            </div>
+        </div>
+       
+    </div>
+
+    <footer>
+        <p>With<span style="color:red;font-size: 30px;">&hearts;</span>Hemanth</p>
+        <p>&copy; CopyRight <span id="year"></span> </p>
+    </footer>
+    
+</body>
+<script src="./src/script.js">
+</script>
+</html>

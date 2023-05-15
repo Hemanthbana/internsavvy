@@ -1,0 +1,299 @@
+*{
+    font-family:Verdana, Tahoma, sans-serif;
+}
+.body{
+    color: black !important;
+    background-color: white !important;
+}
+.darkmode{
+    color: white !important;
+    background-color: black !important;
+}
+.brnddarkmode{
+    color:yellow !important;
+}
+#brnd:hover {
+    color: #f0ef20;
+    transform: scale(1.4);
+}
+#navbarNavDropdown{
+    margin:0% 15% 0% 25%;
+}
+
+#navbarNavDropdown ul{
+    margin:0px,20px;
+    gap:5px;
+}
+.dropdown-menu{
+    
+    background-color: black !important;
+}
+.dropdown-item{
+    color: rgb(252, 250, 250) !important;
+}
+.dropdown-item :hover {
+  color:black !important;
+}
+
+.intro{
+    Width:98%;
+    height:80vh;
+    display: flex;
+    align-items: center;
+}
+.intro1{
+   width:49%;
+   margin-left: 1%;
+}
+.butn1{
+    margin:1% 42%;
+    background-color: #f0ef20;
+    border-radius: 5px;
+}
+.ok{
+    margin:1% 42%;
+    background-color: #02ee5c;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px gold;
+}
+#invisible{
+    position: absolute;
+    z-index: 800;
+    visibility:hidden;
+    width: 50%;
+    margin: 25% 0% 0% 15%;
+    opacity: 1;
+   
+}
+#arrow {
+    margin-left: 50%;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 2px solid green;
+     
+}
+
+#arrow:hover{
+    animation-name: dwnarrow;
+    animation-duration: 1s; 
+}
+@keyframes dwnarrow {
+    0%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate:90deg;
+    }
+}
+#Projects{
+    margin:4% 4%;
+    display:flex;
+    flex-wrap: wrap;
+    gap:2%;
+    
+}
+#projct{
+    margin-bottom: 4%;
+    width: 20rem;
+    border:none;
+    background-color: transparent;
+}
+#projct:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+#projct a img{
+    width:100%;
+    height:100%;
+}
+#skill{
+    margin:4% 4%;
+    display:flex;
+    flex-wrap: wrap;
+    gap:2%;
+}
+#skil{
+    width: 20rem;
+    margin-bottom: 4%;
+    border:none;
+    background-color: transparent;
+}
+#skill img{
+    width:100%;
+    border-radius: 10px;
+}
+#skill img:hover {
+    transform: scale(1.1);
+}
+#other{
+    margin:2% 2%;
+    gap:1%;
+    display:flex;
+}
+#other div{
+    width:50%;
+}
+#contact{
+    display:flex; 
+    margin-top:2%;
+}
+.podium{
+    width: 50%;
+    background-image: url(src/redpodium.png);
+    background-size: 100% 155%;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.p1:hover{
+    opacity: 1;
+}
+.p2:hover{
+    opacity: 1;
+}
+.p1{
+    opacity: 0;
+    margin: 13% 1% 0% 30%;
+    height: 70px;
+
+    /* margin:-100%;
+    animation:pod1 4s;
+    animation-fill-mode: forwards; */
+}
+.p1 img{
+    margin: 0% 1% 0% 3%;
+    height: 67px;
+}
+.p2{
+    margin: -3% 1% 0% 3%;
+    opacity: 0;
+    /* animation:pod2 8s;
+    animation-fill-mode: forwards; */
+}
+.p2 img{
+    margin: 3% 0% 0% 16%;
+    height: 67px;
+}
+@keyframes pod1 {
+    0%{
+        margin:-100%;
+    }
+    100%{
+        margin: 13% 1% 0% 30%;
+        
+    }
+}
+@keyframes pod2 {
+    0%{
+        margin:-100%;
+    }
+    100%{
+        margin: -3% 1% 0% 3%;
+        
+    }
+}
+button a{
+   text-decoration: none;
+}
+a img{
+    width: auto;
+    height:50vh;
+}
+
+h5{
+    text-align: center;
+}
+footer{
+    width:100%;
+    margin-top: 1%; 
+    height:5%;
+    text-align: center;
+}
+footer p{
+    margin-bottom: 0px;
+}
+
+
+
+/* .loader{
+    z-index: 500;
+    border:1px solid yellow;
+    border-top:1px solid red;
+    border-radius: 50%;
+    width:20px;
+    height:20px;
+    animation:spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+    
+} */
+
+/* login style css*/
+
+#loginform{
+    visibility: visible;
+    text-align: center;
+    width: 500px;
+    background-color: #5e5e5e75;
+    padding: 25px;
+    margin: 50px 100px;
+    border-radius: 7px;
+    box-shadow: -2px 2px 10px black;
+}
+#formdivmain{
+    width:100%;
+    display: grid;
+    gap:15px;
+}
+#inputdiv{
+    width:100%;
+    align-content: center;
+}
+.inputcls{
+    padding-left:10px;
+    width: 98%;
+    height: 30px;
+    color: #f5f5f1;
+    background-color: #1f1d1f;
+    border-radius: 5px 5px 5px 5px;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+}
+
+.formbtn{
+    width: 20%;
+    height: 30px;
+    background-color: #f2c400;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: sans-serif;
+    margin-left: 320px;
+    animation: butn 3s infinite;
+}
+
+@keyframes butn{
+    0%{
+        background-color: #9b8b48;
+    }
+    100%{
+        background-color: gold;
+        box-shadow: 1px 1px 2px #1f1d1f;
+    }
+}
+
+#signupdiv{
+    padding: 3px;
+    visibility: hidden;
+    text-align: center;
+    margin-left: 50px;
+    width: 500px;
+    background-color: #389f5f;
+    color:#1f1d1f;
+}
